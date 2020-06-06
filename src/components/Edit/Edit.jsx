@@ -81,9 +81,9 @@ function Edit() {
 
                                     <Button className={classes.registerButton} variant="outlined" color="primary"
                                             onClick={() => setUserData({
-                                                name: name,
-                                                education: education,
-                                                image: image
+                                                name: name ? name: user.name,
+                                                education: education ? education : user.education,
+                                                image: image ? image: user.image
                                             })} fullWidth>
                                         Register
                                     </Button>
